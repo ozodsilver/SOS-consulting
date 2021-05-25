@@ -1,0 +1,493 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#top {
+  width: 100%;
+  height: 800px;
+  background: url(./images/b-bg-header_index.png);
+  background-size: cover;
+  background-attachment: fixed;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+  font-family: inherit;
+}
+#top header {
+  width: 92%;
+  margin: auto;
+  color: white;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#top .header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  padding: 7px 10px 7px 0;
+}
+#top .header-top .logo {
+  width: 224px;
+}
+#top .header-top .logo a {
+  width: 150px;
+  height: auto;
+}
+#top .header-top .logo a img {
+  width: 200px;
+  height: 60px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+#top .header-top .logo a img:hover {
+  transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -o-transform: scale(1.07);
+}
+#top .header-top .tel {
+  display: flex;
+  justify-content: space-around;
+}
+#top .header-top .tel .tel-left {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#top .header-top .tel .tel-left a {
+  padding: 0.6em 0.7em;
+  border: 2px solid white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  text-decoration: none;
+  color: white;
+}
+#top .header-top .tel .tel-right p {
+  font-weight: 600;
+  font-size: 1.6em;
+  opacity: 0.98;
+  margin-bottom: -10px !important;
+}
+#top .header-top p {
+  font-size: 1em;
+  font-weight: lighter;
+  opacity: 0.94;
+}
+#top .header-top a[id=klient] {
+  width: 191px;
+  padding: 0.6em 0;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border: none;
+  color: white;
+  background-color: #ff4800;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  transition-duration: 0.3s;
+  text-decoration: none;
+}
+#top .header-top a[id=klient]:hover {
+  background-color: #d86c41;
+  cursor: pointer;
+}
+#top .header-bottom {
+  font-size: 16px;
+  font-family: sans-serif;
+  position: relative;
+}
+#top .header-bottom ul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.3em;
+  padding-left: 0 !important;
+}
+#top .header-bottom ul li {
+  list-style: none;
+  padding: 18px;
+}
+#top .header-bottom ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+#top .hover-content,
+#top .hover-content2,
+#top .hover-content3,
+#top .hover-content4,
+#top .hover-content5,
+#top .hover-content6 {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: none;
+  margin-top: -20px;
+  box-shadow: 0 0 25px black;
+  position: relative;
+}
+#top .hover-content .horc1 {
+  width: 35%;
+  height: 100%;
+  z-index: 22;
+  background-color: white;
+  box-shadow: 0 0 35px grey;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+#top .hover-content .horc1 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 15px 15px 10px 50px;
+  font-size: 1.1em;
+}
+#top .hover-content .horc1 a:hover {
+  color: orangered;
+}
+#top .hover-content .horc2 {
+  width: 35%;
+  height: 100%;
+  z-index: 22;
+  background-color: white;
+  box-shadow: 0 0 35px grey;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+#top .hover-content .horc2 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 15px 15px 10px 50px;
+  font-size: 1.1em;
+}
+#top .hover-content .horc2 a:hover {
+  color: orangered;
+}
+#top .hover-content2 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content2 a:hover {
+  color: orangered;
+}
+#top .hover-content2 .horc3 {
+  width: 60%;
+  height: 100%;
+  z-index: 22;
+  background-color: white;
+  box-shadow: 0 0 35px grey;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+#top .hover-content2 .horc3 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 15px 15px 10px 50px;
+  font-size: 0.8em;
+}
+#top .hover-content2 .horc3 a:hover {
+  color: orangered;
+}
+#top .hover-content3 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content3 a:hover {
+  color: orangered;
+}
+#top .hover-content3 .horc4 {
+  width: 60%;
+  height: 100%;
+  z-index: 22;
+  background-color: white;
+  box-shadow: 0 0 35px grey;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+#top .hover-content3 .horc4 a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 15px 15px 10px 30px;
+  font-size: 1.1em;
+}
+#top .hover-content3 .horc4 a:hover {
+  color: orangered;
+}
+#top .hover-content4 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content4 a:hover {
+  color: orangered;
+}
+#top .hover-content5 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content5 a:hover {
+  color: orangered;
+}
+#top .hover-content6 a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content6 a:hover {
+  color: orangered;
+}
+#top .block {
+  display: block !important;
+}
+#top .hover-content ul li {
+  list-style: none;
+  margin: 20px 10px 20px 60px;
+  padding: 5px;
+}
+#top .hover-content ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content ul li a:hover {
+  color: #ff4800;
+}
+#top .hover-content2 ul li {
+  list-style: none;
+  margin: 20px 10px 20px 60px;
+  padding: 5px;
+}
+#top .hover-content3 ul li {
+  list-style: none;
+  margin: 20px 10px 20px 60px;
+  padding: 5px;
+}
+#top .hover-content4 ul li {
+  list-style: none;
+  margin: 20px 10px 20px 60px;
+  padding: 5px;
+}
+#top .hover-content5 ul li {
+  list-style: none;
+  margin: 20px 10px 20px 60px;
+  padding: 5px;
+}
+#top .hover-content6 ul li {
+  list-style: none;
+  margin: 20px 10px 20px 60px;
+  padding: 5px;
+}
+#top .hover-content2 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content2 ul li a:hover {
+  color: #ff4800;
+}
+#top .hover-content3 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content3 ul li a:hover {
+  color: #ff4800;
+}
+#top .hover-content4 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content4 ul li a:hover {
+  color: #ff4800;
+}
+#top .hover-content5 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content5 ul li a:hover {
+  color: #ff4800;
+}
+#top .hover-content6 ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+#top .hover-content6 ul li a:hover {
+  color: #ff4800;
+}
+#top .home {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 5%;
+}
+#top .home i {
+  font-size: 6em;
+  color: white;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#top .home i:hover {
+  color: grey;
+}
+#top .home h1 {
+  font: 600 80px "BanderaPro", sans-serif;
+  letter-spacing: 5.3px;
+  line-height: 1;
+  margin-top: 22px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+#top .home h3 {
+  font: 100 60px "MuseoSansCyr", Arial, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  text-align: center;
+  color: white;
+}
+#top .home h4 {
+  font: 500 32px "BanderaPro", sans-serif;
+  letter-spacing: 0.2px;
+  line-height: 1;
+  margin-top: 54px;
+  color: white;
+  text-align: center;
+}
+#top .home .info {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 122px auto;
+  margin-bottom: 50px;
+}
+#top .home .info span {
+  font-size: 2em;
+  color: white;
+  margin-top: 6px;
+  text-align: center;
+  margin-right: 10px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#top .home .info a {
+  color: white;
+  font-size: 1.5em;
+}
+#top .home .info a:hover {
+  text-decoration: none;
+}
+#top .home .frame {
+  width: 70%;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  position: absolute;
+  top: 13%;
+  left: 15%;
+  z-index: 123;
+  display: none;
+  animation: animate 1s 1 ease;
+}
+#top .home .frame i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 3em;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(-200px);
+    -webkit-transform: translateY(-200px);
+    -moz-transform: translateY(-200px);
+    -ms-transform: translateY(-200px);
+    -o-transform: translateY(-200px);
+  }
+  50% {
+    transform: translateY(300px);
+    -webkit-transform: translateY(300px);
+    -moz-transform: translateY(300px);
+    -ms-transform: translateY(300px);
+    -o-transform: translateY(300px);
+  }
+  80% {
+    transform: translateY(-100px);
+    -webkit-transform: translateY(-100px);
+    -moz-transform: translateY(-100px);
+    -ms-transform: translateY(-100px);
+    -o-transform: translateY(-100px);
+  }
+}
+
+#registration textarea {
+  width: 97%;
+  margin: auto;
+  height: 200px;
+  margin-top: 20px;
+}
+#registration button {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+#footer {
+  position: relative;
+}
+#footer a {
+  color: white;
+}
+#footer a:hover {
+  text-decoration: none;
+}
+#footer #statklent {
+  font-size: 1.1em;
+  padding: 2px 6px !important;
+  transition: 0.4s !important;
+  -webkit-transition: 0.4s !important;
+  -moz-transition: 0.4s !important;
+  -ms-transition: 0.4s !important;
+  -o-transition: 0.4s !important;
+}
+#footer #statklent:hover {
+  background-color: transparent !important;
+  color: white !important;
+}
+
+/*# sourceMappingURL=style.css.map */
