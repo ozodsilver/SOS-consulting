@@ -558,10 +558,10 @@ body {
       }
     }
   }
+}
 
-  .menyuMobile {
-    display: none;
-  }
+.menyuMobile {
+  display: none;
 }
 
 $breakpoint-tablet: 992px;
@@ -666,8 +666,98 @@ $breakpoint-tablet: 992px;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
     overflow: hidden;
-    display: block;
+    display: block !important;
     z-index: 9999;
+    ul {
+      padding: 0;
+      transition-duration: 0.6s;
+
+      li {
+        border-bottom: 1px solid rgb(34, 26, 26);
+        padding: 0 !important;
+
+        span {
+          text-decoration: none;
+          color: rgba(238, 230, 230, 0.794);
+          display: block !important;
+          width: 100%;
+          padding: 10px 10px;
+          &:active {
+            background-color: rgb(25, 49, 49);
+          }
+        }
+      }
+    }
+
+    .addItem {
+      width: 100% !important;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .insideItem {
+      width: 0;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+
+      a {
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+      }
+    }
+
+    .insideItem2 {
+      width: 0;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+
+      a {
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+      }
+    }
+
+    .insideItem3 {
+      width: 0;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: 0.3s;
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -ms-transition: 0.3s;
+      -o-transition: 0.3s;
+
+      a {
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+      }
+    }
   }
 
   .home {

@@ -64,7 +64,7 @@
           <div class="leftMenu d-flex mx-3 mx-sm-4" id="menyu" onclick="menu()">
             <i class="fa fa-bars"></i>
 
-            <p>Menu</p>
+            <p>МЕНЮ</p>
           </div>
 
           <div class="tel2 mx-sm-2 mx-2">
@@ -481,7 +481,7 @@
 
         <div class="frame">
           <i class="fa fa-close" id="exit"></i>
-          <iframe
+          <!-- <iframe
             width="100%"
             height="100%"
             src="https://www.youtube.com/embed/EkKVnaNC5j0"
@@ -489,7 +489,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
         </div>
       </div>
     </div>
@@ -505,10 +505,255 @@
         ></i>
       </div>
 
-      <div class="container p-2">
+      <div class="container p-2" id="insideMenu">
         <ul>
-          <li><a href="">sdsd</a></li>
+          <li>
+            <span href="">Главная</span>
+          </li>
+          <li
+            style="display: flex; justify-content: space-between"
+            onclick="openRight()"
+          >
+            <span href="">Бухгалтерские услуги</span>
+            <i class="fa fa-angle-right text-white mt-2"></i>
+          </li>
+          <li
+            style="display: flex; justify-content: space-between"
+            onclick="openRight2()"
+          >
+            <span href="">Юридические услуги</span>
+            <i class="fa fa-angle-right text-white mt-2"></i>
+          </li>
+          <li
+            style="display: flex; justify-content: space-between"
+            onclick="openRight3()"
+          >
+            <span href="">Регистрация</span>
+            <i class="fa fa-angle-right text-white mt-2"></i>
+          </li>
+          <li style="display: flex; justify-content: space-between">
+            <span href="">Ликвидация</span>
+            <i class="fa fa-angle-right text-white mt-2"></i>
+          </li>
+          <li style="display: flex; justify-content: space-between">
+            <span href="">По направлениям</span>
+            <i class="fa fa-angle-right text-white mt-2"></i>
+          </li>
+          <li style="display: flex; justify-content: space-between">
+            <span href="">Компания</span>
+          </li>
+          <li style="display: flex; justify-content: space-between">
+            <span href="">Инфо</span>
+          </li>
+          <li style="display: flex; justify-content: space-between">
+            <span href="">Контакты</span>
+          </li>
         </ul>
+      </div>
+
+      <div class="insideItem bg-dark">
+        <i
+          class="fa fa-angle-left text-white p-2 mx-2"
+          onclick="exitItem()"
+        ></i>
+        <span href="" class="text-white py-3 px-0"
+          >Главная / Бухгалтерские услуги</span
+        >
+
+        <a
+          href=""
+          class="d-block p-3 px-3 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+            margin-top: 40px;
+          "
+          >Бухгалтерское обслуживание</a
+        >
+
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >Бухгалтерское обслуживание</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >Бухгалтерское обслуживание</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >Бухгалтерское обслуживание</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >Бухгалтерское обслуживание</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(44, 36, 36);
+            text-decoration: none;
+          "
+          >Бухгалтерское обслуживание</a
+        >
+      </div>
+
+      <!-- ikkinchi item menyudagi -->
+
+      <div class="insideItem2 bg-dark">
+        <i
+          class="fa fa-angle-left text-white p-2 mx-2"
+          onclick="exitItem2()"
+        ></i>
+        <span href="" class="text-white py-3 px-0"
+          >Главная / Юридическое обслуживание</span
+        >
+
+        <a
+          href=""
+          class="d-block p-3 px-3 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+            margin-top: 40px;
+          "
+          >Юридическое обслуживание</a
+        >
+
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >Юридическое обслуживание</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >Юридическое обслуживание</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >Юридическое обслуживание</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >Юридическое обслуживание</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(44, 36, 36);
+            text-decoration: none;
+          "
+          >Юридическое обслуживание</a
+        >
+      </div>
+
+      <!-- inside item 3 -->
+
+      <div class="insideItem3 bg-dark">
+        <i
+          class="fa fa-angle-left text-white p-2 mx-2"
+          onclick="exitItem3()"
+        ></i>
+        <span href="" class="text-white py-3 px-0"
+          >Главная / registratsiya</span
+        >
+
+        <a
+          href=""
+          class="d-block p-3 px-3 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+            margin-top: 40px;
+          "
+          >registratsiya</a
+        >
+
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >registratsiya</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >registratsiya</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >registratsiya</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(42, 42, 42);
+            text-decoration: none;
+          "
+          >registratsiya</a
+        >
+        <a
+          href=""
+          class="d-block p-3 px-3 my-0 text-light"
+          style="
+            border-bottom: 1px solid rgb(44, 36, 36);
+            text-decoration: none;
+          "
+          >registratsiya</a
+        >
       </div>
     </div>
     <!-- registratsiyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->

@@ -194,6 +194,7 @@ $(document).ready(function(){
 function menu(){
   
     document.querySelector('.menyuMobile').style.width = '90%'
+    document.querySelector('.menyuMobile ul').style.transform = 'translateX(0)'
   }
 
   // menyuni yopish
@@ -201,7 +202,8 @@ function menu(){
   
 function menuClose(){
   
-    document.querySelector('.menyuMobile').style.width = '0%'
+    document.querySelector('.menyuMobile').style.width = '0%';
+    document.querySelector('.menyuMobile ul').style.transform = 'translateX(-100px)';
   }
 
 
@@ -215,3 +217,40 @@ $(window).on("scroll", function() {
       $("#h-bottom").removeClass("sticky");
     }
 });	
+
+// ichki menyuda ichkariga kirish
+
+function openRight(){
+  document.querySelector('.insideItem').classList.add('addItem')
+  document.querySelector('.insideItem a').style.transform = 'translateX(0px)'
+}
+
+function exitItem(){
+  document.querySelector('.insideItem').classList.remove('addItem')
+    document.querySelector('.insideItem a').style.transform = 'translateX(100px)'
+}
+
+
+function openRight2(){
+  document.querySelector('.insideItem2').classList.add('addItem')
+  document.querySelector('.insideItem2 a').style.transform = 'translateX(0px)'
+}
+
+function exitItem2(){
+  document.querySelector('.insideItem2').classList.remove('addItem')
+    document.querySelector('.insideItem2 a').style.transform = 'translateX(100px)'
+}
+
+
+
+
+
+function openRight3(){
+  document.querySelector('.insideItem3').classList.add('addItem')
+  document.querySelector('.insideItem3 a').style.transform = 'translateX(0px)'
+}
+
+function exitItem3(){
+  document.querySelector('.insideItem3').classList.remove('addItem')
+    document.querySelector('.insideItem3 a').style.transform = 'translateX(100px)'
+}
