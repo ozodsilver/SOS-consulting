@@ -27,10 +27,14 @@
   <body>
     <div id="top">
       <header>
-        <div class="header-top">
-          <div class="logo">
-            <a href="" class="img img-fluid">
-              <img src="./images/unnamed.png" alt="" />
+        <div class="header-top d-block d-sm-flex d-md-flex">
+          <div class="logo mx-auto mx-sm-4 mx-lg-0 px-2 px-sm-0">
+            <a href="" class="mx-auto">
+              <img
+                src="./images/unnamed.png"
+                alt=""
+                class="img img-fluid mx-auto"
+              />
             </a>
           </div>
 
@@ -49,19 +53,22 @@
 
           <p style="margin-top: 1em">Регионам: 8 800 222-12-62</p>
 
-          <a href="" id="klient">Стать клиентом</a>
+          <a href="" id="klient" class="d-block mx-auto mx-sm-0"
+            >Стать клиентом</a
+          >
         </div>
 
         <!-- header top end -->
 
         <div class="header-bottom">
-          <div class="leftMenu d-flex">
+          <div class="leftMenu d-flex mx-3 mx-sm-4" id="menyu" onclick="menu()">
             <i class="fa fa-bars"></i>
+
             <p>Menu</p>
           </div>
 
-          <div class="tel2">
-            <div class="tel-left2">
+          <div class="tel2 mx-sm-2 mx-2">
+            <div class="tel-left2 mx-sm-2">
               <a href="tel:+998 99 588 71 20" class="fa fa-phone"></a>
             </div>
 
@@ -485,12 +492,23 @@
           ></iframe>
         </div>
       </div>
-    </div>
 
+      <div class="menyuMobile bg-dark">
+        <div class="menyuTop d-flex justify-content-between">
+          <p class="display-5 text-white">Menyu</p>
+          <i
+            class="fa fa-close fa-2x text-light p-1"
+            id="closeMenu"
+            onclick="menuClose()"
+          ></i>
+        </div>
+      </div>
+    </div>
+    <!-- registratsiyaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
     <div id="registration">
-      <div class="container">
-        <div class="row">
-          <div class="col-8">
+      <div class="container-fluid">
+        <div class="row mx-md-0">
+          <div class="col-lg-8 col-sm-12 col-md-8 px-md-0">
             <h2 style="font-weight: 600">Получить бесплатную консультацию</h2>
             <p style="opacity: 0.8">
               Большинство проблем, с которыми сталкиваются предприниматели не
@@ -558,7 +576,7 @@
                 </div>
 
                 <textarea
-                  class="form-control"
+                  class="form-control px-md-0"
                   rows="3"
                   placeholder="napishite commentariya"
                 >
@@ -582,7 +600,7 @@
             </form>
           </div>
 
-          <div class="col-4">
+          <div class="col-md-4 col-lg-4 py-lg-5 col-sm-6 col-12 mx-auto">
             <div
               class="
                 card
@@ -590,20 +608,20 @@
                 justify-content-center
                 align-items-center
                 border-0
+                my-md-5
+                py-md-5
               "
-              style="margin-top: 100px"
             >
               <img
                 src="./images/address.png"
                 alt=""
-                class="img img-fluid rounded"
-                style="width: 200px"
+                class="img img-fluid rounded w-50"
               />
 
-              <div class="card-body">
-                <div class="d-flex justify-content-around">
-                  <i class="fa fa-map-marker fa-2x mt-1 text-end"></i>
-                  <h2 class="text-start">Россия, Москва</h2>
+              <div class="card-body w-100">
+                <div class="d-flex justify-content-center">
+                  <i class="fa fa-map-marker fa-2x mt-1"></i>
+                  <h2 class="text-start text-sm-center">Россия, Москва</h2>
                 </div>
 
                 <a
@@ -615,7 +633,7 @@
 
                 <p
                   style="font-size: 0.8em; text-align: center"
-                  class="d-block text-secondary"
+                  class="d-block text-secondary border-top"
                 >
                   +7 (499) 370-32-04, 8 800 222-12-62
                 </p>
@@ -626,6 +644,7 @@
       </div>
     </div>
 
+    <!-- fooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooter -->
     <div
       id="footer"
       style="height: auto"
@@ -634,15 +653,15 @@
       <div class="container-fluid" style="background-color: rgb(7, 141, 132)">
         <div class="container-fluid">
           <div class="row" style="border-bottom: 1px dashed white">
-            <div class="col-lg-5 col-md-12">
+            <div class="col-lg-5 col-md-12 px-md-0 px-0">
               <div
-                class="card pt-4 border-0 px-2"
+                class="card pt-4 border-0 px-0 px-md-0"
                 style="background-color: rgb(7, 141, 132)"
               >
                 <div class="display-flex justify-content-between">
                   <img
                     src="./images/unnamed.png"
-                    class="w-25 mx-md-0 mx-lg-0"
+                    class="w-25 mx-md-0 mx-lg-0 mx-sm-0 mx-0"
                     alt=""
                   />
                   <a
@@ -651,7 +670,7 @@
                       btn btn-success
                       bg-light
                       text-success
-                      mx-lg-4 mx-md-5 mx-sm-4
+                      mx-lg-4 mx-md-5 mx-sm-4 mx-5
                       p-1
                       px-lg-1
                       w-50
@@ -673,7 +692,7 @@
                     осуществляется в соответствии с законодательством РФ.
                   </p>
 
-                  <p style="font-size: 1.4em" class="mb-0">
+                  <p style="font-size: 1.5em" class="mb-0">
                     Москва: 8 800 222-12-62, +7 (499) 370-32-15
                   </p>
                   <p>м. Пушкинская, ул. Малая Дмитровка, д. 20</p>
@@ -763,7 +782,7 @@
       >
         <div class="container-fluid" style="padding-bottom: 50px">
           <div class="row pb-5" style="position: relative; z-index: 222">
-            <div class="col-lg-2 col-md-4 text-light">
+            <div class="col-lg-2 col-md-4 text-light px-md-0">
               <p class="mt-md-4" style="font-size: 1.3em">Компания</p>
               <a href="" class="text-light d-block">О компании</a>
               <a href="" class="text-light d-block">Оплата онлайн</a>
@@ -835,8 +854,8 @@
       </div>
 
       <img
-        class="d-md-none d-lg-block d-sm-none d-none"
-        src="https://education.vermont.gov/sites/aoe/files/images/edu-eduation-quality-footer.png"
+        class="d-md-none d-lg-block d-sm-none d-none mb-lg-5"
+        src="./images/forfooter.png"
         alt="for footer image"
         style="
           width: 100%;

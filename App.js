@@ -187,4 +187,19 @@ $(document).ready(function(){
  
 });
 
-      
+
+// menyuni chiqarish
+
+
+function menu(){
+  
+    document.querySelector('.menyuMobile').style.width = '90%'
+  }
+
+  // menyuni yopish
+
+  
+function menuClose(){
+  
+    document.querySelector('.menyuMobile').style.width = '0%'
+  }

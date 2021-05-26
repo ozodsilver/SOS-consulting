@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+}
+
 #top {
   width: 100%;
   height: 800px;
@@ -18,6 +22,7 @@
   margin: auto;
   color: white;
   font-size: 16px;
+  position: relative !important;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 #top .header-top {
@@ -107,7 +112,8 @@
   width: 100%;
   font-size: 16px;
   font-family: sans-serif;
-  position: relative;
+  position: sticky !important;
+  top: 0;
 }
 #top .header-bottom ul {
   width: 100% !important;
@@ -463,6 +469,9 @@
     -o-transform: translateY(-100px);
   }
 }
+#top .menyuMobile {
+  display: none;
+}
 
 @media (max-width: 992px) {
   #top {
@@ -536,6 +545,21 @@
   #top .header-top .logo {
     margin-left: 20px;
   }
+  #top .menyuMobile {
+    width: 0%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    overflow: hidden;
+  }
+  #top .menyuMobile {
+    display: block;
+  }
 
   .home {
     width: 100%;
@@ -599,6 +623,55 @@
 #footer #statklent:hover {
   background-color: transparent !important;
   color: white !important;
+}
+
+@media (max-width: 576px) {
+  #top {
+    clip-path: none !important;
+  }
+  #top .header-bottom {
+    height: 60px !important;
+  }
+  #top .header-bottom i {
+    font-size: 0.9em;
+  }
+  #top .header-bottom p {
+    font-size: 0.7em;
+    margin-top: 8px;
+  }
+  #top .header-bottom .tel2 {
+    margin-right: 4px;
+  }
+  #top .header-bottom .tel2 span {
+    display: none !important;
+  }
+  #top .header-bottom .tel2 a {
+    font-size: 0.9em;
+  }
+  #top .tel-right2 p {
+    font-size: 1em !important;
+  }
+  #top .home {
+    height: auto !important;
+  }
+  #top .home .info {
+    display: none !important;
+  }
+  #top .home h1 {
+    font-size: 2em !important;
+  }
+  #top .home .frame {
+    width: 90% !important;
+    height: 300px !important;
+    margin: auto !important;
+    left: 5%;
+  }
+
+  #footer #statklent {
+    width: 40% !important;
+    font-size: 1em;
+    padding: 2px 0 !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
