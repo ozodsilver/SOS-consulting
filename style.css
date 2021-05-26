@@ -545,20 +545,26 @@ body {
   #top .header-top .logo {
     margin-left: 20px;
   }
-  #top .menyuMobile {
+  #top .sticky {
+    position: fixed !important;
+    top: 0;
+    z-index: 988;
+  }
+
+  .menyuMobile {
     width: 0%;
     height: 100vh;
-    position: absolute;
-    top: 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
     transition: 0.4s;
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
     -ms-transition: 0.4s;
     -o-transition: 0.4s;
     overflow: hidden;
-  }
-  #top .menyuMobile {
     display: block;
+    z-index: 9999;
   }
 
   .home {

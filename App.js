@@ -203,3 +203,15 @@ function menuClose(){
   
     document.querySelector('.menyuMobile').style.width = '0%'
   }
+
+
+
+$(window).on("scroll", function() {
+    if($(window).scrollTop() > 50) {
+        $("#h-bottom").addClass("sticky");
+      
+    } else {
+       
+      $("#h-bottom").removeClass("sticky");
+    }
+});	
