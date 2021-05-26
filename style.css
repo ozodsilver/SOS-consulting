@@ -104,13 +104,15 @@
   cursor: pointer;
 }
 #top .header-bottom {
+  width: 100%;
   font-size: 16px;
   font-family: sans-serif;
   position: relative;
 }
 #top .header-bottom ul {
+  width: 100% !important;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-top: 0.3em;
   padding-left: 0 !important;
 }
@@ -122,6 +124,12 @@
   text-decoration: none;
   color: white;
   font-weight: 600;
+}
+#top .header-bottom .leftMenu {
+  display: none !important;
+}
+#top .header-bottom .tel2 {
+  display: none;
 }
 #top .hover-content,
 #top .hover-content2,
@@ -340,7 +348,7 @@
 }
 #top .home {
   width: 90%;
-  height: auto;
+  height: auto !important;
   margin: auto;
   margin-top: 5%;
 }
@@ -456,6 +464,109 @@
   }
 }
 
+@media (max-width: 992px) {
+  #top {
+    clip-path: none !important;
+  }
+  #top .tel {
+    display: none !important;
+  }
+  #top header {
+    width: 100%;
+  }
+  #top header .header-bottom {
+    width: 100%;
+    height: 70px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  #top header .header-bottom ul {
+    display: none;
+  }
+  #top header .header-bottom .leftMenu {
+    font-size: 2.3em;
+    justify-content: space-between;
+    margin-left: 0.8em;
+    margin-top: 10px;
+    display: flex !important;
+  }
+  #top header .header-bottom .leftMenu i {
+    margin-top: 9px;
+  }
+  #top header .header-bottom .leftMenu p {
+    margin-left: 10px;
+  }
+  #top header .header-bottom .tel2 {
+    display: flex;
+    justify-content: space-around;
+  }
+  #top header .header-bottom .tel2 .tel-left2 {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #top header .header-bottom .tel2 .tel-left2 a {
+    padding: 0.6em 0.7em;
+    border: 2px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    text-decoration: none;
+    color: white;
+  }
+  #top header .header-bottom .tel2 .tel-right2 p {
+    font-weight: 600;
+    font-size: 1.6em;
+    opacity: 0.98;
+    margin-bottom: -10px !important;
+  }
+  #top .header-top {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100% !important;
+  }
+  #top .header-top p {
+    display: none;
+  }
+  #top .header-top .logo {
+    margin-left: 20px;
+  }
+
+  .home {
+    width: 100%;
+    height: 1100px !important;
+    font-size: 1em;
+    margin-top: 60px !important;
+  }
+  .home h1 {
+    font-size: 2.5em !important;
+    font-weight: 900 !important;
+  }
+  .home h3 {
+    font-size: 2.3em !important;
+  }
+  .home .frame {
+    width: 300px;
+    height: 450px !important;
+  }
+  .home .info {
+    width: 90% !important;
+    margin-bottom: 150px !important;
+    margin-top: 80px !important;
+  }
+
+  #footer .uchir {
+    display: none !important;
+  }
+  #footer .footer-bottom {
+    display: none !important;
+  }
+}
 #registration textarea {
   width: 97%;
   margin: auto;
